@@ -63,15 +63,15 @@ namespace Projeny.Internal
                             continue;
                         }
 
-                        if (pluginDir.Name == "Android" || pluginDir.Name == "WebGL")
-                        {
-                            foreach (var platformDir in pluginDir.GetDirectories())
-                            {
-                                CheckJunction(platformDir, badDirectories, brokenJunctions);
-                            }
+                        //if (pluginDir.Name == "Android" || pluginDir.Name == "WebGL")
+                        //{
+                        //    foreach (var platformDir in pluginDir.GetDirectories())
+                        //    {
+                        //        CheckJunction(platformDir, badDirectories, brokenJunctions);
+                        //    }
 
-                            continue;
-                        }
+                        //    continue;
+                        //}
 
                         CheckJunction(pluginDir, badDirectories, brokenJunctions);
                     }

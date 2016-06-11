@@ -14,7 +14,7 @@ namespace Projeny.Internal
     {
         public static void Debug(string message, params object[] args)
         {
-            //UnityEngine.Debug.Log(message.Fmt(args));
+            UnityEngine.Debug.Log(message.Fmt(args));
         }
 
         public static void Info(string message, params object[] args)
